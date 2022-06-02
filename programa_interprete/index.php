@@ -213,8 +213,8 @@
                                 echo '<td class="bg-warning text-white">'.$data[0].' (Pwned!)</td><!--Usuario-->';
                                 echo '<td class="bg-warning text-white">'.$data[1].'</td><!--Contraseña-->';
                               }else{
-                                echo '<td>'.$data[0].'</td><!--Usuario-->';
-                                echo '<td>'.$data[1].'</td><!--Contraseña-->';
+                                echo '<td>'.htmlspecialchars($data[0]).'</td><!--Usuario-->';
+                                echo '<td>'.htmlspecialchars($data[1]).'</td><!--Contraseña-->';
                               }
                             ?>
                           
